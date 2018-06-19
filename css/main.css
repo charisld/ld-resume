@@ -1,0 +1,462 @@
+#wrapper{
+    background: url(../images/2.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+
+hr{
+    width: 60%;
+    height: 2px;
+    background: #fff;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+h3{
+    font-size: 20px;
+}
+.title{
+    padding-top:50px;
+    text-align: center;
+}
+
+.star{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/星星.png);
+    background-size: contain;
+    margin: 0 30px;
+}
+
+#info{
+    /* background:#333; */
+    /* height: 300px; */
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    min-height: 600px;
+} 
+
+#info span{
+    display:inline-block;
+    margin: 10px;
+    text-align: left;
+
+}
+.my-info{
+    text-align: left;
+    margin: 0 auto ;
+    display: inline-block;
+    margin:20px 0 50px 0; 
+}
+
+#skills{
+    background: #2abba3;
+    /* height: 400px; */
+    text-align: center;
+    min-height: 600px;
+    background-attachment: fixed;
+}
+
+
+
+#skills .container{
+    padding:50px 30px 80px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: #333;
+    transition: 0.2s linear;/*匀速放大*/
+    -webkit-transition:all 0.4 linear; 
+}
+
+.skill-item .icon:hover{
+    transform: rotate(360deg) scale(1.2); 
+    -ms-transform: rotate(360deg) scale(1.2);
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -o-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+}
+
+.icon-css{
+    background: url(../images/CSS.png);
+    background-size: contain;
+}
+.icon-ht{
+    background: url(../images/html.png);
+    background-size: contain;
+}
+.icon-js{
+    background: url(../images/JS.png);
+    background-size: contain;
+}
+.icon-jq{
+    background: url(../images/jquery.png);
+    background-size: contain;
+}
+.icon-re{
+    background: url(../images/react.png);
+    background-size: contain;
+}
+.icon-b{
+    background: url(../images/B.png);
+    background-size: contain;
+}
+.icon-web{
+    background: url(../images/webpack.png);
+    background-size: contain;
+}
+
+.item-text{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    background: #eb583e;
+    border-radius: 5px; 
+}
+
+#projects{
+    background: #eb583e;
+    text-align: center;
+}
+
+#projects .container{
+    padding:50px 30px 80px 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pro{
+    /* background: rgba(255,255,255,0.3); */
+    width:30%;
+    height: 300px;
+}
+
+.pro-title{
+    background: #333;
+    border-radius: 5px;
+}
+
+/* 卡片 */
+.wrap-side{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px; 
+}
+
+.side{
+    position: absolute;
+    top:0;
+    left:0; 
+    background: #2abba3;
+    height: 100%;
+    width: 100%;
+    transition: all 1s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.side-front p{
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+  
+}
+
+
+.lang{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+.lang span{
+    background: #e4da56;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.side-back{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    background: #fff;
+}
+
+.side-back ul{
+    /* list-style-image: url(../images/星星.png); */
+    list-style-type:circle;
+    margin-left: 30px;
+}
+
+.side-back ul li{
+    padding: 10px 10px 5px 5px;
+    color: #333;
+    font-size: 16px;
+    text-align: left;
+}
+.point{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #333;
+}
+
+
+
+
+.address{
+    background:rgba(0,0,0,0.5);
+    border-radius: 3px;
+    border:2px solid rgba(255,255,255,0.8);
+    padding: 10px;
+    width:300px;
+    position: relative;
+}
+
+.address a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.address .arrow{
+    position: absolute;
+    right: 15px;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition:0.4s ease;
+}
+
+/* 线条飞入 */
+.line{
+    display: block;
+    position: absolute;
+    background: #fff;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition:0.2s ease;
+
+}
+
+.line-top{
+    height: 2px;
+    left:-120px;
+    top:-2px;
+}
+
+.line-bottom{
+    height: 2px;
+    right: -120px;
+    bottom: -2px;
+}
+
+.line-right{
+    width: 2px;
+    top:-50px;
+    right:-2px;
+}
+
+.line-left{
+    width: 2px;
+    bottom: -50px;
+    left:-2px;
+}
+
+.address:hover{
+    background: rgba(0,0,0,0.6);
+}
+
+
+/* 注意span的right必需为-2不然右边的飞线会出现间距 */
+.address:hover span{
+    right:-2px;
+}
+
+.address:hover .line-top{
+    width: 300px;
+    left:-2px;
+}
+.address:hover .line-bottom{
+    width: 300px;
+    right:-2px;
+}
+.address:hover .line-right{
+    height: 42px;
+    top:-2px;
+}
+
+.address:hover .line-left{
+    height: 42px;
+    bottom: -2px;
+}
+
+#contact{
+    background: #2abba3;
+}
+
+#contact .contact-box{
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tip{
+    position: absolute;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 0 14px;
+    background: #eb583e;
+    top:30px;
+    opacity: 0;
+}
+
+.tip span{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border:7px solid transparent;
+    border-top-color: #eb583e;
+    left:50%;
+    margin-left:-3px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    /* margin: 10px; */
+    /* background: #eb583e; */
+
+}
+
+/* 小三角形的制作 */
+.box span{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin:0 auto;
+}
+
+.box div{
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+.contact-QQ{
+    background: url(../images/qq.png);
+    background-size: contain;
+}
+.contact-weixin{
+    background: url(../images/微信.png);
+    background-size: contain;
+}
+.contact-git{
+    background: url(../images/github.png);
+    background-size: contain;
+}
+.contact-tel{
+    background: url(../images/手机.png);
+    background-size: contain;
+}
+.contact-mail{
+    background: url(../images/邮箱.png);
+    background-size: contain;
+}
+
+
+#back-to-top{
+    background: #666;
+    width: 50px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    display: none;
+}
+
+.arrow-up{
+    width: 100%;
+    height: 100%;
+}
+
+
+#last{
+    min-height: 150px;
+    text-align: center;
+}
+#last div{
+    background: rgba(0,0,0,0.3);
+    width: 80px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+
+
+#side-nav{
+    position: fixed;
+    width:30px;
+    height:200px;
+    top:50%;
+    margin-top:-100px;
+    left:20px;
+}
+
+#side-nav li{
+    display: block;
+    border-radius:50%;
+    background:#fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px 0;
+}
+#side-nav li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
